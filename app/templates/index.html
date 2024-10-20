@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Rule Engine</h1>
+    </nav>
+
+    <div class="container">
+        <!-- Input -->
+        <div class="input1-container">
+            <form id="create-rule-form">
+                <label for="rule">Enter the rule</label>
+                <input type="text" id="rule" name="rule" required>
+                <button type="submit">Create Rule</button>
+            </form>
+        </div>
+        <!-- Json -->
+        
+            <form id="evaluate-rule-form" class="input2-container">
+            <div class="box">
+                <label for="ast">AST in JSON :</label>
+                <textarea id="ast" name="ast" required></textarea>
+            </div>
+            <div class="box">
+                <label for="data">Data in JSON:</label>
+                <textarea id="data" name="data" required></textarea>
+            </div>
+            
+            <button type="submit">Evaluate Rule</button>
+            </form>
+        
+        <!-- TRue -->
+        <div class="output-container">
+            <div id="result" class="result-section"></div>
+        </div>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
