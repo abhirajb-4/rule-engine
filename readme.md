@@ -1,6 +1,6 @@
 # Rule Engine Application
 
-## Overview
+## Description
 This is a simple 3-tier rule engine application that determines user eligibility based on attributes like age, department, income, and spend. The system uses an Abstract Syntax Tree (AST) to represent conditional rules and allows for dynamic creation, combination, and modification of these rules.
 
 ## Features
@@ -22,20 +22,12 @@ This is a simple 3-tier rule engine application that determines user eligibility
     - `js/`:
       - `script.js`: JavaScript files.
   - `templates/`:
-      - `index.html`: Main UI template.
-  
-- `tests/`: Contains unit tests.
-  - `test_rules.py`: Tests for rule creation, combination, and evaluation.
-  - `test_api.py`: Tests for the API functions.
+      - `index.html`: Main UI template..
 - `requirements.txt`: Lists the dependencies.
 - `main.py`: The entry point of the application.
 - `README.md`: This documentation file.
 
-## Design Choices
-- **3-tier Architecture**: The application is designed with a 3-tier architecture, separating the UI, API, and backend logic for better maintainability and scalability.
-- **Abstract Syntax Tree (AST)**: Used to represent conditional rules, allowing for dynamic creation, combination, and modification.
-- **Error Handling**: Comprehensive error handling for invalid rule strings and data formats to ensure robustness.
-- **UI Design**: The UI is designed to be clean and user-friendly, with dynamic feedback for rule evaluation results.
+
 
 ## Instructions
 
@@ -75,7 +67,3 @@ This is a simple 3-tier rule engine application that determines user eligibility
 
   Input this json in "Data (JSON format):" and press evaluate button which will hence generate the reult as Trur or False.
 
-
-## Predefined test cases:
-### Run the tests or directly browse it on the web browser with the help of sample examples given below:
-    python -m unittest discover tests
